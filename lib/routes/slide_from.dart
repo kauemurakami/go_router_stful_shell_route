@@ -1,4 +1,0 @@
-enum SlideFrom {
-  inn,
-  out,
-}

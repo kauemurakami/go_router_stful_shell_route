@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:go_router/go_router.dart';
-import 'package:stful_shell_go_router/routes/slide_from.dart';
+import 'package:stful_shell_go_router/routes/transitions/slide_from.dart';
 
 class CustomFadeTransition extends CustomTransitionPage<void> {
   final SlideFrom fadeOut;
@@ -14,9 +14,7 @@ class CustomFadeTransition extends CustomTransitionPage<void> {
           transitionDuration: const Duration(milliseconds: 400),
           reverseTransitionDuration: const Duration(milliseconds: 400),
           transitionsBuilder: (_, animation, __, child) {
-            final opacityTween = fadeOut == SlideFrom.out
-                ? Tween(begin: 1.0, end: 0.0)
-                : Tween(begin: 0.0, end: 1.0);
+            final opacityTween = fadeOut == SlideFrom.out ? Tween(begin: 1.0, end: 0.0) : Tween(begin: 0.0, end: 1.0);
 
             return FadeTransition(
               opacity: animation.drive(
