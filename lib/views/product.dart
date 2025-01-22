@@ -4,6 +4,8 @@ import 'package:stful_shell_go_router/utils/functions/setup_locator.dart';
 
 class ProductView extends StatelessWidget {
   ProductView({super.key});
+  // ProductView({super.key, required id});
+  // final int id;
   //get id in current state of the router
   final int id = int.parse(getIt<MyGoRouterDelegate>().router.state!.pathParameters['id']!);
 
