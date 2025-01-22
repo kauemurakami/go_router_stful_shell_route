@@ -1,4 +1,3 @@
-
 import './imports_delegate.dart';
 
 class MyGoRouterDelegate {
@@ -29,7 +28,6 @@ class MyGoRouterDelegate {
                 name: AppRoutes.home.routeName,
                 pageBuilder: (context, state) {
                   print(state.fullPath);
-
                   return CustomFadeTransition(
                     child: const HomeView(),
                   );
@@ -68,14 +66,15 @@ class MyGoRouterDelegate {
           StatefulShellBranch(
             routes: [
               GoRoute(
-                  path: AppRoutes.settings,
-                  name: AppRoutes.settings.routeName,
-                  pageBuilder: (context, state) {
-                    print(state.fullPath);
-                    return CustomFadeTransition(
-                      child: const SettingsView(),
-                    );
-                  }),
+                path: AppRoutes.settings,
+                name: AppRoutes.settings.routeName,
+                pageBuilder: (context, state) {
+                  print(state.fullPath);
+                  return CustomFadeTransition(
+                    child: const SettingsView(),
+                  );
+                },
+              ),
             ],
           ),
         ],
