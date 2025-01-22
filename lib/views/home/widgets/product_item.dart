@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:stful_shell_go_router/models/product_model.dart';
 import 'package:stful_shell_go_router/routes/delegate/delegate.dart';
 import 'package:stful_shell_go_router/routes/routes.dart';
-import 'package:stful_shell_go_router/utils/setup_locator.dart';
+import 'package:stful_shell_go_router/utils/functions/setup_locator.dart';
 
 class ProductWidget extends StatelessWidget {
   const ProductWidget({super.key, required this.productModel});

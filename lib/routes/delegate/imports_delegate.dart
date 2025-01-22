@@ -9,3 +9,4 @@ export 'package:stful_shell_go_router/views/home/home.dart';
 export 'package:stful_shell_go_router/views/product.dart';
 export 'package:stful_shell_go_router/views/profile.dart';
 export 'package:stful_shell_go_router/views/settings.dart';
+export 'package:stful_shell_go_router/utils/extensions/route_name.dart';
