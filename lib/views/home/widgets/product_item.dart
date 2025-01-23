@@ -10,9 +10,12 @@ class ProductWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () => getIt<MyGoRouterDelegate>()
-          .router
-          .pushNamed(AppRoutes.productName, pathParameters: {'id': productModel.id.toString()}),
+      onTap: () => getIt<MyGoRouterDelegate>().router.pushNamed(
+        AppRoutes.productName,
+        pathParameters: {
+          'id': productModel.id.toString(),
+        },
+      ),
       child: Container(
         decoration:
             BoxDecoration(color: Colors.blue.shade100, borderRadius: const BorderRadius.all(Radius.circular(6.0))),
